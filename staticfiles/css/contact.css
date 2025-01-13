@@ -1,0 +1,82 @@
+/* Styles for Contact Page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Left Side Form Styling */
+form {
+    margin-top: 1rem;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.form-check-input {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea.form-control {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+textarea#name, textarea#email, textarea#phone {
+    height: 3rem;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Right Side Contact Info Styling */
+.col-lg-6 h3, .col-lg-6 p {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.contact-info {
+    padding-left: 30px; /* Adjust as needed for more spacing */
+}
+
+/* Center the contact info on the right side */
+.contact-info h3, 
+.contact-info p {
+    margin-bottom: 20px; /* Space between each item */
+    font-size: 1.1rem;    /* Slightly increase font size */
+}

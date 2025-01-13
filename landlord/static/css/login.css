@@ -1,0 +1,135 @@
+        body {
+            background: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 50px;
+            width: 70%;
+            height: 70vh;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-left: 30px;
+        }
+
+        .left-side {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .left-side .go-back {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: blue;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .left-side .go-back i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: blue;
+        }
+
+        .left-side .logo img {
+            width: 150px;
+            margin: 20px 0;
+        }
+
+        .left-side h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .left-side h4 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+        }
+        
+
+        .right-side {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 25px;  /* Increased space between input fields */
+        }
+
+        .form-group input {
+            width: 120%;  /* Increased input width */
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-container .bi-eye {
+            position: absolute;
+            top: 35%;
+            right: 10px;
+            cursor: pointer;
+            
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+        }
+
+        .bottom-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 30px;  /* Increased margin for more space */
+        }
+
+        .bottom-links p {
+            font-size: 14px;
+            color: #333;
+            width: 45%;  /* Adjusted width for balance */
+        }
+
+        .bottom-links button {
+            width: 50%;  /* Adjusted button width to be consistent with other items */
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #800080;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    

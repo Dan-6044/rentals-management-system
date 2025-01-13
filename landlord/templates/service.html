@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why List Your Property at Homiary</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/feature.css' %}">
+</head>
+<body id="feature-page"> <!-- Unique ID for styling the page -->
+
+<div class="feature-container my-5">
+    <!-- Centered Header -->
+    <h2 class="text-center">Reasons to List Your Property at Homiary</h2>
+
+    <!-- Three-Column Layout -->
+    <div class="row mt-5">
+        <!-- Left Column -->
+        <div class="col-lg-4 d-flex flex-column align-items-start">
+            <h3>Accept Online Applications</h3>
+            <p>Streamline the application process by allowing tenants to apply online, saving time for both landlords and renters.</p>
+            
+            <h3>Manage Your Listings Efficiently</h3>
+            <p>Update, track, and manage your property listings with ease, keeping them accurate and up-to-date at all times.</p>
+        </div>
+
+        <!-- Center Column: Image with Box Shadow -->
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="image-container">
+                <img src="{% static 'images/landlord.png' %}" alt="Property Listing" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-4 d-flex flex-column align-items-start">
+            <h3>Reach a Wider Audience</h3>
+            <p>Increase your property's visibility by listing it on Homiary, connecting with potential tenants quickly.</p>
+            
+            <h3>Secure and Reliable Platform</h3>
+            <p>Homiary ensures your data is secure, giving you confidence in a platform designed to protect both landlords and tenants.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

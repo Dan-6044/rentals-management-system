@@ -1,0 +1,55 @@
+/* Body padding for non-fixed navbar */
+body {
+  background-color: #f8f9fa;
+  color: #000000;
+  padding-top: 60px; /* Adjusted if navbar is fixed */
+  font-family: 'Arial', sans-serif; /* Apply a sans-serif font to the body */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(228, 207, 207, 0.2); /* Box shadow for subtle effect */
+  transition: background-color 0.5s ease; /* Smooth transition */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative; /* Ensures it scrolls */
+}
+
+/* Navbar Links and Items */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+
+.navbar-nav .nav-item div {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  color: #333333; /* Darker color for the nav links */
+  font-weight: bold; /* Make the text bold */
+  font-family: 'Arial', sans-serif; /* Use sans-serif font for the nav links */
+  font-size: 1rem; /* Adjust font size as needed */
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #0056b3;
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+  background-color: rgba(250, 249, 249, 0.8); /* Dark background when scrolled */
+  transition: background-color 0.3s ease;
+}

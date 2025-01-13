@@ -1,0 +1,50 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+
+# Environment variables
+.env
+
+# Django specific
+db.sqlite3
+/static/
+/media/
+
+# Virtual environments
+venv/
+.env/
+env/
+.venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Migration files (optional, if you want to exclude)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Coverage and testing
+htmlcov/
+.coverage
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build files
+*.egg-info/
+.eggs/
+dist/
+build/

@@ -1,0 +1,59 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/ten-footer.css' %}">
+
+<footer id="footer" class="footer container-fluid ">
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+                <a class="navbar-brand" href="{% url 'landlord'  %}">
+                    <img src="{% static 'images/favicon.png' %}" alt="Storage" style="width: 60px; height: 50px;">
+                  </a>
+                <a href="{% url 'landlord'  %}" class="logo d-flex align-items-center">
+                    <span class="sitename text-dark">Homiary.</span>
+                </a>
+                <p class=" text-dark">We are a premier rental management platform, dedicated to helping landlords streamline property listing, tenant management, and rental income tracking. </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4 class=" text-dark">Useful Links</h4>
+                <ul>
+                    <li><a href="{% url 'landlord'  %}">Home</a></li>
+                    <li><a href="{% url 'register'  %}">Landlord/Agents</a></li>
+                    <li><a href="{% url 'contact'  %}">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4 class=" text-dark">Privacy</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4 class=" text-dark">Contact Us</h4>
+                <p>10010 Moi Avenue Street</p>
+                <p>Nairobi, NY 535022</p>
+                <p>Kenya</p>
+                <p class="mt-4"><strong>Phone:</strong> <span>+254 111 687 88</span></p>
+                <p><strong>Email:</strong> <span>info@homiary.com</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Elite Coders</strong> <span>All Rights Reserved</span></p>
+    </div>
+</footer><!-- End Footer -->
+{% endblock %}

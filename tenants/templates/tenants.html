@@ -1,51 +1,10 @@
 {% extends 'master.html' %}
 
-{% block title %}Tenants Dashboard{% endblock %}
+{% block title %}Homiary{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h1 class="mt-4">Welcome to the Tenants Dashboard</h1>
-    <p class="lead">Here you can manage your rentals, make payments, and submit maintenance requests.</p>
+{% include 'ten-navbar.html' %}
+{% include 'ten-hero.html' %}
 
-    <!-- Dashboard Cards -->
-    <div class="row mt-5">
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">My Rentals</h5>
-                    <p class="card-text">View and manage your current rental agreements.</p>
-                    <a href="/rentals/" class="btn btn-primary">View Rentals</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Payments</h5>
-                    <p class="card-text">Check your payment history and make new payments.</p>
-                    <a href="/payments/" class="btn btn-success">Go to Payments</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Maintenance</h5>
-                    <p class="card-text">Submit and track your maintenance requests.</p>
-                    <a href="/maintenance/" class="btn btn-warning">Request Maintenance</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Announcements Section -->
-    <div class="mt-5">
-        <h3>Announcements</h3>
-        <ul class="list-group">
-            <li class="list-group-item">Upcoming maintenance on 15th Jan. Water supply will be interrupted.</li>
-            <li class="list-group-item">Rent payment deadline for this month is 31st Jan.</li>
-            <li class="list-group-item">Community meeting scheduled for 20th Jan at the clubhouse.</li>
-        </ul>
-    </div>
-</div>
+{% include 'ten-footer.html' %}
 {% endblock %}

@@ -16,7 +16,7 @@ User = get_user_model()
 
 def logout_view(request):
     logout(request)  # Logs out the user
-    return redirect('home')  # Redirect to the home page
+    return redirect('landlord')  # Redirect to the home page
 
 
 def landlord(request):

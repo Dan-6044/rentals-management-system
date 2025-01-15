@@ -1,0 +1,38 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block content %}
+<div class="ten-feature-section">
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="row w-100 text-center">
+            <!-- Feature 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="feature-container p-4 shadow rounded d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
+                    <img src="{% static 'images/feature.jpg' %}" alt="Feature 1" class="img-fluid mb-4" style="max-height: 150px;">
+                    <h2 class="feature-title" style="font-size: 2rem; font-weight: bold;">Buy a home</h2>
+                    <p class="feature-description">Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                    <a href="#" class="btn btn-outline-primary" style="background-color: transparent; border: 2px solid #007bff; color: #007bff;">Browse homes</a>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="feature-container p-4 shadow rounded d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
+                    <img src="{% static 'images/feature2.jpg' %}" alt="Feature 2" class="img-fluid mb-3" style="max-height: 150px;">
+                    <h2 class="feature-title" style="font-size: 2rem; font-weight: bold;">Lease a home</h2>
+                    <p class="feature-description">No matter what path you take to lease your home, we can help you navigate a successful sale.</p>
+                    <a href="#" class="btn btn-outline-primary" style="background-color: transparent; border: 2px solid #007bff; color: #007bff;">See your options</a >
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="feature-container p-4 shadow rounded d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
+                    <img src="{% static 'images/feature3.jpg' %}" alt="Feature 3" class="img-fluid mb-3" style="max-height: 150px;">
+                    <h2 class="feature-title" style="font-size: 2rem; font-weight: bold;">Rent a home</h2>
+                    <p class="feature-description">No matter what path you take to sell your home, we can help you navigate a successful sale.</p>
+                    <a href="#" class="btn btn-outline-primary" style="background-color: transparent; border: 2px solid #007bff; color: #007bff;">Find rentals</a >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

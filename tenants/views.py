@@ -32,11 +32,14 @@ def signup(request):
             # Log the user in automatically after registration
             login(request, user)
             return redirect('ten_dashboard', user_id=user_id)  # Redirect to home after successful registration
+        else:
+            # Pass the form errors to the template
+            return render(request, 'signing.html', {'form': form, 'signup_errors': form.errors})
+
     else:
         form = SignupForm()
 
     return render(request, 'signing.html', {'form': form})
-
 
 def signin(request):
     if request.method == "POST":
@@ -64,6 +67,7 @@ def signin(request):
             messages.error(request, "Invalid email or password.", extra_tags="login_error")
 
     return render(request, 'signing.html')
+
 
 
 @login_required

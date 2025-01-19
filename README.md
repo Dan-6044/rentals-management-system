@@ -1,1 +1,1 @@
-﻿# rentals-management-system
+﻿# rentals-management-system in Django & bootstrap 
